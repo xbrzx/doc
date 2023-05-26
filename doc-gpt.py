@@ -36,10 +36,10 @@ def create_ix(splits):
 # Auth
 st.sidebar.image("Img/reading.jpg")
 api_key = st.sidebar.text_input("`OpenAI API Key:`", type="password")
-st.sidebar.write("`By:` kelompok 4")
+st.sidebar.write("`By:` kelompok 4 (bram,wira,naura")
 os.environ["OPENAI_API_KEY"] = api_key
 chunk_chars = st.sidebar.radio("`Choose chunk size for splitting`", (2000, 3000, 4000), index=1)
-st.sidebar.info("`Larger chunk size can produce better answers, but may hit ChatGPT context limit (4096 tokens)`")
+st.sidebar.info("`chunk for breaking down to smaller segments (the larger chunk the more it has relevance of the content. beware context limit (4096 tokens)`")
 
 # App 
 st.header("`semantic pdf search gpt based`")
