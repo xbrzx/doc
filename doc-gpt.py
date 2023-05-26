@@ -42,8 +42,8 @@ chunk_chars = st.sidebar.radio("`Choose chunk size for splitting`", (2000, 3000,
 st.sidebar.info("`Larger chunk size can produce better answers, but may hit ChatGPT context limit (4096 tokens)`")
 
 # App 
-st.header("`doc-gpt`")
-st.info("`Hello! I am a ChatGPT connected to whatever document you upload.`")
+st.header("`semantic pdf search gpt based`")
+st.info("`this tools is to analyze your document`")
 uploaded_file_pdf = st.file_uploader("`Upload PDF File:` ", type = ['pdf'] , accept_multiple_files=False)
 if uploaded_file_pdf and api_key:
     # Split and create index
